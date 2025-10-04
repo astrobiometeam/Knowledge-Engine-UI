@@ -897,7 +897,7 @@ class VoiceAssistant {
 
             const gltf = await new Promise((resolve, reject) => {
                 loader.load(
-                    '/static/assets/Alfred_Adler.glb',
+                    'Alfred_Adler.glb',
                     resolve,
                     (progress) => console.log('Avatar loading:', (progress.loaded / progress.total * 100) + '%'),
                     reject
@@ -2287,4 +2287,5 @@ function renderMarkdownSafely(text) {
   const div = document.createElement('div');
   div.textContent = text ?? '';
   return div.innerHTML.replace(/\n/g, '<br>');
+
 }
